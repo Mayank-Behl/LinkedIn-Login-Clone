@@ -1,0 +1,11 @@
+1. Navbar
+2. Login Banner
+3. Topics
+4. Suggested Search
+5. Job Post
+6. Feature
+7. More Features
+8. Video Section
+9. Get Started Section
+10. Footer Section
+11. Sub-Footer Section

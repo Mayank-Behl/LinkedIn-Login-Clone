@@ -17,7 +17,7 @@ body {
 /* Utilities */
 
 .container {
-  max-width: 1180px;
+  max-width: 1280px;
   margin-inline: auto;
   padding-inline: 20px;
   overflow: hidden;
@@ -50,17 +50,62 @@ a {
   height: 50px;
 }
 
-.flex li {
+/* .flex li {
   margin-right: 2rem;
-}
+} */
 
 .hover-link i {
   display: flex;
   justify-content: center;
 }
 
-.primary-button{
-    border-left: 2px solid rgb(105, 104, 104);
-    padding-left: 2rem;    
-    height: 1rem;
+
+.vl{
+  border-left: 0.5px solid rgb(105, 104, 104);
+  height: 2.5rem;
 }
+
+.dress-hover{
+  transition: 0.2s ease-in-out;
+  margin-right: 2rem;
+}
+
+.dress-hover :hover{
+  color: rgb(41, 40, 40);
+}
+
+.primary-button{
+  margin-left: 5px;    
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(69, 69, 69);
+  transition: 0.2s ease-in-out;
+}
+
+.primary-button:hover{
+  background-color: rgb(246, 245, 245);
+  border-radius: 50px;
+  box-shadow: none;
+}
+
+.secondary-button{  
+  margin-left: 5px;  
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 2px solid rgb(0, 124, 240);
+  border-radius: 50px;
+  color: rgb(0, 124, 240);
+  transition: 0.2s ease-in-out;
+}
+
+.secondary-button:hover{
+  background-color: rgb(213, 233, 251);
+}
+
+
+/* Login Banner */

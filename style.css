@@ -38,6 +38,23 @@ a {
   color: rgb(105, 104, 104);
 }
 
+h1 {
+  font-size: 3rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.width-layout {
+  width: 100%;
+}
+
 /* Nav bar */
 
 .main-nav {
@@ -59,23 +76,22 @@ a {
   justify-content: center;
 }
 
-
-.vl{
+.vl {
   border-left: 0.5px solid rgb(105, 104, 104);
   height: 2.5rem;
 }
 
-.dress-hover{
+.dress-hover {
   transition: 0.2s ease-in-out;
   margin-right: 2rem;
 }
 
-.dress-hover :hover{
+.dress-hover :hover {
   color: rgb(41, 40, 40);
 }
 
-.primary-button{
-  margin-left: 5px;    
+.primary-button {
+  margin-left: 5px;
   font-weight: 500;
   letter-spacing: 0.5px;
   font-size: 1rem;
@@ -85,14 +101,14 @@ a {
   transition: 0.2s ease-in-out;
 }
 
-.primary-button:hover{
+.primary-button:hover {
   background-color: rgb(246, 245, 245);
   border-radius: 50px;
   box-shadow: none;
 }
 
-.secondary-button{  
-  margin-left: 5px;  
+.secondary-button {
+  margin-left: 5px;
   font-weight: 500;
   letter-spacing: 0.5px;
   font-size: 1rem;
@@ -103,9 +119,188 @@ a {
   transition: 0.2s ease-in-out;
 }
 
-.secondary-button:hover{
+.secondary-button:hover {
   background-color: rgb(213, 233, 251);
 }
 
-
 /* Login Banner */
+
+.login-banner {
+  margin-top: 3rem;
+}
+
+.banner-left {
+  flex-direction: column;
+  margin-left: 1.7rem;
+}
+
+.banner-left h1 {
+  color: rgb(156, 119, 119);
+  /* margin-bottom: 1rem; */
+}
+
+form {
+  width: 100%;
+}
+
+form input {
+  display: inline-block;
+  width: 75%;
+  margin-right: auto;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 1rem;
+  height: 3.5rem;
+  border-radius: 4px;
+}
+
+.field-holder {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: 2rem;
+  left: 8px;
+  color: rgb(85, 82, 82);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  cursor: text;
+  width: 75%;
+  transition: 0.2s ease-in-out;
+}
+
+input:focus + label {
+  font-size: 0.75rem;
+  top: 20px;
+  left: 10.5px;
+}
+
+input:focus {
+  border: 2px solid rgb(0, 124, 240);
+  box-shadow: 0px 0px 1px rgb(0, 124, 240);
+}
+
+.show-password {
+  position: absolute;
+  top: 1.9rem;
+  left: 22rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: rgb(85, 82, 82);
+  padding: 5px;
+}
+
+.show-password:hover {
+  cursor: pointer;
+  background-color: rgb(234, 232, 232);
+}
+
+.forgot-password-text {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.forgot-password-text a:hover {
+  color: rgb(0, 124, 240);
+  text-decoration: underline;
+}
+
+/* Button Utility */
+.button-layout {
+  padding: 15px;
+  width: 75%;
+  margin-right: auto;
+  margin-top: 1rem;
+  border-radius: 50px;
+}
+/* END */
+
+.sign-in-button {
+  background-color: rgb(9, 117, 219);
+  text-align: center;
+  color: white;
+  font-size: large;
+  transition: 0.2s ease-in-out;
+}
+
+.sign-in-button:hover {
+  cursor: pointer;
+  background-color: rgb(21, 99, 171);
+}
+
+.or {
+  width: 75%;
+  margin-top: 1rem;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  color: rgb(159, 157, 157);
+}
+
+.or:before {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background: rgb(159, 157, 157);
+  left: 10px;
+  top: 60%;
+  position: absolute;
+}
+
+.or:after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background: rgb(159, 157, 157);
+  right: 10px;
+  top: 60%;
+  position: absolute;
+}
+
+.register-buttons {
+  flex-direction: column;
+  text-align: center;
+}
+
+.first-register-button {
+  border: 2px solid rgb(159, 157, 157);
+  font-size: larger;
+}
+
+.first-register-button i{
+  margin-right: 1.5rem;
+}
+
+.first-register-button:hover{
+  background-color: rgb(235, 234, 234);
+  border: 2px solid rgb(51, 51, 51);
+}
+
+.second-register-button {
+  border: 2px solid rgb(82, 81, 81);
+}
+
+.second-register-button a {
+  color: rgb(30, 30, 30);
+}
+
+.second-register-button:hover{
+  background-color: rgb(235, 234, 234);
+}
+
+.banner-right{
+  position: absolute;
+  width: 45%;
+  left: 52rem;
+  top: 10rem;
+}
+
+.banner-right img{
+  width: 99%;
+}
+

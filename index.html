@@ -225,12 +225,35 @@
           <img src="./assets/asset 5.svg" alt="more-features-image">
           </div>
           <h2>Learn the skills you need to succeed</h2>
-          <a href="#" class="style-topic">Find people you know</a>
+          <div class="dropdown">
+            <button onclick="topicDropDown()" class="dropbtn">Choose a topic to learn about &nbsp&nbsp&nbsp&nbsp <i class="fa-solid fa-caret-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="video-section"></div>
+
+    <!-- Video Section -->
+
+    <div class="video-section">
+      <div class="container flex">
+        <div class="video-left">
+          <iframe width="540px" height="300px"
+           src="https://www.youtube.com/embed/tgbNymZ7vqY"> frameborder="0">
+          </iframe>
+        </div>
+        <div class="video-right">
+          <h2>3 ways to find your job</h2>
+          <h2>Check out these steps to help you get started.</h2>
+        </div>
+      </div>
+    </div>
 
     <div class="get-started"></div>
 
@@ -275,6 +298,26 @@
         }
       }
     </script>
+    <script>
+      // Dropdown Functionality
+      function topicDropDown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
     <!--Fix Banner Image -->
   </body>
 </html>

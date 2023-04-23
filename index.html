@@ -186,25 +186,49 @@
     <!-- Features section -->
 
     <div class="feature">
-      <div class="container flex feature-section">
-        <div class="features-left">
-          <h2>Let the right people know you’re open to work</h2>
-          <p>
-            With the Open To Work feature, you can privately tell recruiters or
-            publicly share with the LinkedIn community that you are looking for
-            new job opportunities.
-          </p>
-        </div>
-        <div class="features-right">
-          <div class="switch-buttons flex">
-            <span id="left-arrow"
-              ><i class="fa-solid fa-chevron-left"></i> <nbsp></nbsp> Pevious</span
-            ><span id="right-arrow"
-              >Next</nbsp><i class="fa-solid fa-chevron-right"></i
-            ></span>
+      <div class="container flex">
+        <div class="flex feature-section">
+          <div class="switch-buttons">
+            <span id="left-arrow" onclick="plusSlides()">
+              <i class="fa-solid fa-chevron-left"></i> <nbsp></nbsp> Pevious</span>
+            <span id="right-arrow" onclick="plusSlides()">Next</nbsp></nbsp>
+              <i class="fa-solid fa-chevron-right"></i></span>
           </div>
-
-          <img src="./assets/asset 1.png" alt="slider-image-1"/>
+          <div class="fs fs-1 fade">
+            <div class="features-left">
+              <h2>Let the right people know you’re open to work</h2>
+              <p>
+                With the Open To Work feature, you can privately tell recruiters or
+                publicly share with the LinkedIn community that you are looking for
+                new job opportunities.
+              </p>
+            </div>
+            <div class="features-right">
+              <img src="./assets/asset 1.png" alt="slider-image-1"/>
+            </div>
+          </div>
+          <div class="fs fs-2 fade">
+            <div class="features-left">
+              <h2>Conversations today could lead to opportunity tomorrow</h2>
+              <p>
+                Sending messages to people you know is a great way to strengthen relationships as you take the next step in your career.
+              </p>
+            </div>
+            <div class="features-right">
+              <img src="./assets/asset 2.png" alt="slider-image-1"/>
+            </div>
+          </div>
+          <div class="fs fs-3 fade">
+            <div class="features-left">
+              <h2>Stay up to date on your industry</h2>
+              <p>
+                From live videos, to stories, to newsletters and more, LinkedIn is full of ways to stay up to date on the latest discussions in your industry.
+              </p>
+            </div>
+            <div class="features-right">
+              <img src="./assets/asset3.png" alt="slider-image-1"/>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -337,7 +361,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
+    <!-- <script>
       // COMPLETE THIS FUNCTIONALITY
       function showPassword() {
         const psswd = document.getElementById("password");
@@ -387,6 +411,74 @@
         }
       }
       </script>
-    <!--Fix Banner Image -->
+    Fix Banner Image
+     -->
+     <script>
+      // let sliderImages = document.querySelectorAll(".fs"),
+      // arrowLeft = document.querySelector("#left-arrow"),
+      // arrowRight = document.querySelector("#right-arrow"),
+      // current = 0;
+
+      // // Clear all images
+      // function reset() {
+      //   for (let i = 0; i < sliderImages.length; i++) {
+      //     sliderImages[i].style.display = "none";
+      //   }
+      // }
+
+      // // Initial slide
+      // function startSlide() {
+      //   reset();
+      //   sliderImages[0].style.display = "flex";
+      // }
+
+      // // Show previous
+      // function slideLeft() {
+      //   reset();
+      //   sliderImages[current - 1].style.display = "flex";
+      //   current--;
+      // }
+ 
+      // // Show next
+      // function slideRight() {
+      //     reset();
+      //     sliderImages[current + 1].style.display = "flex";
+      //     current++;
+      // }
+
+      // // Left arrow click
+      // arrowLeft.addEventListener("click", function () {
+      // // if (current === 0) {
+      // //     current = sliderImages.length;
+      // // }
+      // if(current === 0 ){
+      //     arrowLeft.disable=true;
+      //     arrowLeft.classList.add('change-for-inactive');
+      //   }
+      // else{
+      //   slideLeft();
+      //   arrowLeft.classList.remove('change-for-inactive');
+      //   arrowRight.classList.remove('change-for-inactive');
+      // }
+      // });
+
+      // // Right arrow click
+      // arrowRight.addEventListener("click", function () {
+      //     if (current === sliderImages.length - 1) {
+      //         arrowRight.disable=true;
+      //         arrowRight.classList.add('change-for-inactive');
+              
+      //     }
+      //     else{
+      //       slideRight();
+      //       arrowLeft.classList.remove('change-for-inactive');
+      //       arrowRight.classList.remove('change-for-inactive');
+      //     }
+      // });
+  
+      // startSlide();
+      
+     </script>
+     <script src="./script.js"></script>
   </body>
 </html>

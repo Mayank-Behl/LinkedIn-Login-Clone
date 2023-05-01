@@ -1,0 +1,35 @@
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* Nav Bar */
+.dress-hover{
+    display: none;
+}    
+
+/* Login Banner */
+
+.banner-left{
+    max-width: 70%;
+}
+
+.banner-left h1{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-right: 5rem;
+}
+
+.field-holder {
+    position: relative;
+  }
+
+.show-password{
+    position: absolute;
+    top: 1.9rem;
+    left: 10rem;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: rgb(85, 82, 82);
+    padding: 5px;
+}
+
+} 

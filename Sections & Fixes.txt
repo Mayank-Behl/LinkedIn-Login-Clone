@@ -9,3 +9,11 @@
 9. Get Started Section
 10. Footer Section
 11. Sub-Footer Section
+
+
+Fixes
+Main:
+Javascript features & functionalities
+
+Responsive:
+1. Banner Image

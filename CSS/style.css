@@ -660,7 +660,7 @@ input:focus {
   font-size: 3.5rem;
 }
 
-.get-started-section button {
+.get-started-section button{
   margin-right: auto;
   margin-top: 2rem;
   background-color: rgb(9, 117, 219);
@@ -817,5 +817,52 @@ input:focus {
   height: 70%;
 }
 
+/* More Features */
+
+.more-features-section{
+  flex-direction: column;
+}
+
+.more-features-left,.more-features-right{
+  margin-right: auto;
+  margin-left: 1rem;
+  max-width: 70%;
+}
+
+/* Video Section */
+
+.video-left{
+  max-width: 60%;
+  margin-right: 1rem;
+}
+
+.video-right{
+  margin-top: 9rem;
+}
+
+.video-right h2{
+  font-size: 2.3rem;
+}
+
+/* Get started section */
+
+.get-started {
+  background-size: cover;
+
+}
+
+.get-started-section{
+  max-width: fit-content;
+}
+
+.get-started-section h1 {
+  font-size: 3rem;
+  word-spacing: 0rem;
+  margin-left: 1rem;
+}
+
+.get-started-section button{
+  margin-left: 1rem;
+}
 
 } 

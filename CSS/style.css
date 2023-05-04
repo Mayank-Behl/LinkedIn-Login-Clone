@@ -865,4 +865,70 @@ input:focus {
   margin-left: 1rem;
 }
 
-} 
+.vl{
+  border: none;
+}
+
+}
+
+@media only screen and (max-width: 768px){
+
+  /* Nav Bar */
+  .dress-hover{
+    display: none;
+  }  
+
+  .company-logo img {
+    width: 100px;
+    height: 50px;
+  }
+
+  .vl{
+    border: none;
+  }
+
+  .primary-button {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+
+  .secondary-button {
+    font-size: 0.8rem;
+    margin-left: 20px;
+    padding: 0.8rem;
+    border: 2px solid rgb(0, 124, 240);
+    border-radius: 25px;
+    color: rgb(0, 124, 240);
+    transition: 0.2s ease-in-out;
+  }
+
+  /* Login Banner */
+
+  .banner-left h1{
+    font-size: 2rem;
+  }
+
+  .field-holder {
+    position: relative;
+  }
+  
+  .show-password{
+    position: absolute;
+    top: 1.9rem;
+    left: 12rem;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: rgb(85, 82, 82);
+    padding: 5px;
+  }
+
+  #email, #password{
+    width: 100%;
+  }
+
+  .forgot-password-text,.or, .sign-in-button, .first-register-button, .second-register-button{
+    width: 100%;
+  }
+  
+}

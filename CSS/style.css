@@ -737,6 +737,10 @@ input:focus {
   color: rgb(21, 99, 171);
 }
 
+.sub-footer-section-responsive{
+  display: none;
+}
+
 /* Tablet Screen */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -869,6 +873,10 @@ input:focus {
   border: none;
 }
 
+.sub-footer-section-responsive{
+  display: none;
+}
+
 }
 
 @media only screen and (max-width: 768px){
@@ -957,19 +965,6 @@ input:focus {
     font-size: 2.5rem;
   }
 
-  /* Job Post */
-/* .left-job-post{
-  min-width: 20vw;
-}
-
-.right-job-post{
-  margin-left: 5rem;
-}
-
-.post-button{
-  margin-top: 5rem;
-  margin-left: 0;
-} */
   .job-post{
     height: 23rem;
   }
@@ -1139,7 +1134,38 @@ input:focus {
   /* Sub footer section */
 
   .sub-footer-section{
-    flex-wrap: wrap;
+    display: none;
+  }
+
+  .sub-footer-section-responsive{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-sub-footer{
+    flex-direction: column;
+    margin-right: auto;
+    max-width: 40%;
+  }
+  .right-sub-footer{
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
+    padding-bottom: 2.5rem;
+  }
+
+  .left-sub-footer a, .right-sub-footer a{
+    margin-top: 1rem;
+  }
+
+  .hover-link{
+    margin: 0;
+    padding: 0;
+  }
+
+  .no-display-element{
+    display: none;
   }
 
 }
